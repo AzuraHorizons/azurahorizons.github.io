@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Manrope:regular,bold">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SebastianAigner/twemoji-amazing/twemoji-amazing.css">
+
+    </head>
+
+    <!-- The video -->
+    <video autoplay muted loop id="videobg">
+    <source src="videobg.mp4" type="video/mp4">
+    </video>
+    <script src="https://kit.fontawesome.com/4e3fe85b8e.js" crossorigin="anonymous"></script>
+    
+    <!-- i love w3 schools -->
+
+    <h1>
+        <a href="./"><img id = "logo" src="logo.png" alt = "Azura"></a> 
+
+        <ul id="toplinks">
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#links">Links</a></li>
+
+        </ul>
+    </h1>
+    <body>
+        
+        <div id="innertext"><b id="heading">hi, i'm Azura!</b>
+        
+            <p>19 | she/her <i class="twa twa-transgender-flag"></i> | comp sci student, stream producer, and catgirl streamer
+            </p><p>My website's still under construction, but in the meantime, see me around the internet at:
+            </p>
+            <ul id="linkslist">
+                <li ><a class="twitch" href="https://www.twitch.tv/azurahorizons"><i class="fa-brands fa-twitch"></i></a></li>
+                <li ><a class="twitter" href="https://twitter.com/AzuraHorizons"><i class="fa-brands fa-twitter"></i></a></li>
+                <li ><a class="mastodon" href="https://introvert.country/@azurahorizons"><i class="fa-brands fa-mastodon"></i></a></li>
+                <li ><a class="discord" href="https://discord.gg/TU4We3rSeD"><i class="fa-brands fa-discord"></i></a></li>
+            </ul>
+        </div>
+
+        <button id="pause" onclick="myFunction()"><i id="pausesign" class="fa-solid fa-pause"></i></button>
+
+        <script>
+            var video = document.getElementById("videobg");
+            
+            // Get the button
+            var btn = document.getElementById("pause");
+            var inner = document.getElementById("pausesign");
+            
+            // Pause and play the video, and change the button text
+            function myFunction() {
+              if (video.paused) {
+                video.play();
+                inner.className = "fa-solid fa-pause";
+              } else {
+                video.pause();
+                inner.className = "fa-solid fa-play";
+              }
+            }
+            </script>
+    </body>
+  
+
+</html>
+

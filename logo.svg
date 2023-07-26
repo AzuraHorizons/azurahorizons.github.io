@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+	<title>Azura copy 2</title>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 1377px;fill: #ffffff;font-weight: 400;font-family: "RisingStar", "RisingStar" } 
+		.t1 { font-size: 1377px;fill: #ffffff;font-weight: 400;font-family: "Bayhours", "Bayhours" } 
+		.t2 { font-size: 1377px;fill: #ffffff;font-weight: 400;font-family: "Boyflare", "Boyflare" } 
+	</style>
+	<text id="Azura" style="transform: matrix(.6,0,0,.6,327,448)" >
+		<tspan x="0" y="732.8" class="t0">A</tspan><tspan  y="732.8" class="t1">z</tspan><tspan  y="732.8" class="t1" dx="0" >u</tspan><tspan  y="732.8" class="t2" dx="0" >r</tspan><tspan  y="732.8" class="t1" dx="0" >a</tspan><tspan  y="732.8" class="t1" dx="0" >
+</tspan>
+	</text>
+</svg>
