@@ -1,0 +1,146 @@
+html{
+    font-family: 'Manrope', sans-serif;
+    background-color: black;
+}
+/* Style the video: 100% width and height to cover the entire window */
+#videobg {
+    position: fixed;
+    filter: brightness(80%);
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -5;
+  }
+  
+
+#logo {
+    position:fixed;
+    top: -30px;
+    width: 384px;
+    height: 216px;
+    
+
+    filter: drop-shadow(5px 5px 0px #ff6bf3) drop-shadow(5px 5px 0px #00d8ff);
+    transition: filter .5s;
+
+}
+
+#logo:hover{
+    filter: drop-shadow(12px 12px 0px #ff6bf3) drop-shadow(12px 12px 0px #00d8ff);
+}
+
+#logo:active{
+    filter: drop-shadow(8px 8px 0px #ff6bf3) drop-shadow(8px 8px 0px #00d8ff);
+    transition: filter .1s;
+}
+
+#toplinks{
+    display: none !important;
+    position:fixed;
+    top:1em;
+    right:2em;
+}
+   ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    display: inline-block;
+    float: none;
+  }
+
+  li a {
+    display: block;
+    padding: 10 50;
+    color:white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, .2);
+    transition: color .3s, background-color .3s;
+  }
+
+  /* li a:hover{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+  } */
+
+  .twitch:hover{
+    background-color: #9146FF;
+    text-decoration: none;
+  }
+  .twitter:hover{
+    background-color: #1DA1F2;
+    text-decoration: none;
+  }
+  .mastodon:hover{
+    background-color: #6364FF;
+    text-decoration: none;
+  }
+  .discord:hover{
+    background-color: #5865F2;
+    text-decoration: none;
+  }
+
+
+#heading{
+    font-size: 80px;
+    position:relative;
+    text-shadow:
+       3px 3px 0 #000,
+     -3px -3px 0 #000,  
+      3px -3px 0 #000,
+      -3px 3px 0 #000,
+       3px 3px 0 #000;
+    font-weight: black;
+    color:white;
+    margin:auto;
+    text-align: center;
+}
+#innertext{
+    position:relative;
+    font-size: 20px;
+    text-shadow:
+       1px 1px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    font-weight: black;
+    color:white;
+    margin:auto;
+    text-align: center;
+    top:300px;
+}
+
+  #pause{
+    position: fixed;
+    border:none;
+    bottom: 1em;
+    right: 1em;
+    color:black;
+    display:inline-block;
+    text-align: center;
+    background-color: white;
+    font-size: 40px;
+    padding:.4em .6em;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0px black;
+    cursor: pointer;
+    
+    transition:color .5s, background-color .5s, border .5s, box-shadow .5s;
+  }
+  #pause:hover{
+    color:white;
+    background-color: black;
+    border: 2px solid white;
+    box-shadow: 5px 5px 0px white;
+
+  }
+  #pause:active{
+    transform: translate(3px, 3px);
+  }
+  
