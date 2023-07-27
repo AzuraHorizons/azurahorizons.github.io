@@ -38,6 +38,8 @@
                 <li ><a class="mastodon" rel="me" href="https://introvert.country/@azurahorizons"><i class="fa-brands fa-mastodon"></i></a></li>
                 <li ><a class="discord" href="https://discord.gg/TU4We3rSeD"><i class="fa-brands fa-discord"></i></a></li>
             </ul>
+
+            <p class="tc sm">For me, it's currently <span id="localtime"></span> </p>
         </div>
 
         <div id="overlay" onclick="off()">
@@ -49,6 +51,19 @@
 
         </div>
         <button id="pause" onclick="myFunction()"><i id="pausesign" class="fa-solid fa-pause"></i></button>
+
+        <script>
+            function updateLocalTime() {
+                document.getElementById('localtime').innerText = new Date().toLocaleString('en-US', {
+                    timeZone: 'US/Eastern',
+                    hour: '2-digit',
+                    minute: 'numeric'
+                });
+            }
+        
+            setInterval(updateLocalTime, 1000);
+            updateLocalTime();
+        </script>
         <script>
             var video = document.getElementById("videobg");
             
