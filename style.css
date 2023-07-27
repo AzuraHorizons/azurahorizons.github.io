@@ -159,14 +159,36 @@ html{
   }
 
   #window {
+    position:fixed;
     display: none;
     justify-content: center;
-    position: absolute;
     margin:auto;
-    left: 50%;
-    height: 300px;
-    width: 300px;
-    background-color: white;
+    height: 100%;
+    width: 100%;
     z-index: 5;
+  }
+  #close{
+    position: fixed;
+    border:none;
+    top: 1em;
+    right: 1em;
+    color:black;
+    display:inline-block;
+    text-align: center;
+    background-color: white;
+    font-size: 40px;
+    padding:.4em .6em;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0px black;
+    cursor: pointer;
+    z-index: 15;
+    transition:color .5s, background-color .5s, border .5s, box-shadow .5s;
+  }
+  #close:hover{
+    color:white;
+    background-color: black;
+    border: 2px solid white;
+    box-shadow: 5px 5px 0px white;
+
   }
   
