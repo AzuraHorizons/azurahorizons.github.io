@@ -84,8 +84,24 @@ html{
     background-color: #5865F2;
     text-decoration: none;
   }
-
-
+  .tetrio:hover{
+    background-color: #1f9100;
+    text-decoration: none;
+  }
+  .tetrio{
+    position: relative;
+    top: 1px;
+  }
+  .tetrioicon {
+    background-color: rgba(0, 0, 0, .0);
+    display:inline-block;
+    overflow:visible !important;
+    filter: drop-shadow(.25px .25px 0 #000) drop-shadow(-.25px -.25px 0 #000) drop-shadow(.25px -.25px 0 #000) drop-shadow(-.25px .25px 0 #000) drop-shadow(.25px .25px 0 #000);
+    background-image: url("tetrio-mono.png");
+    width: 1.01em;
+    height: 1.01em;
+    line-height: 1;
+  }
 #heading{
     font-size: 80px;
     position:relative;
