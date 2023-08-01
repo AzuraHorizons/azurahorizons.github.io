@@ -36,7 +36,7 @@ html{
 }
 
 #toplinks{
-    display: none !important;
+    /* display: none !important; */
     position:fixed;
     top:1em;
     right:2em;
@@ -126,7 +126,6 @@ html{
       1px -1px 0 #000,
       -1px 1px 0 #000,
        1px 1px 0 #000;
-    font-weight: black;
     color:white;
     margin:auto;
     text-align: center;
@@ -208,4 +207,35 @@ html{
     box-shadow: 5px 5px 0px white;
 
   }
-  
+ div.marquee{
+  z-index: 10;
+  position: -webkit-sticky;
+  position: sticky;
+  top:150px;
+  margin:0;
+  box-sizing: border-box;
+  box-shadow: 0 0 #000 ;
+  display: flex;
+  justify-content: flex-start;
+  background:white;
+  overflow:hidden;
+  transform: skewY(-2deg);
+
+ }
+ .marquee span{
+  font-weight: 300;
+  font-family: 'Manrope', sans-serif !important;
+  white-space: nowrap;
+  padding: 0 1rem;
+  letter-spacing: 0px;
+  animation:move-rtl 1000ms linear infinite;
+ }
+
+ @keyframes move-rtl{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translate(-100%);
+  }
+ }
