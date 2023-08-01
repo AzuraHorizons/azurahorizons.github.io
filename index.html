@@ -4,7 +4,8 @@
         href="https://fonts.googleapis.com/css?family=Manrope:regular,bold">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SebastianAigner/twemoji-amazing/twemoji-amazing.css">
-
+        <title>the Azura Horizone</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
     </head>
 
     <!-- The video -->
@@ -29,27 +30,42 @@
         
         <div id="innertext"><b id="heading">hi, i'm Azura!</b>
         
-            <p>19 | she/her <i class="twa twa-transgender-flag"></i> | comp sci student, stream producer, and catgirl streamer
+            <p>19 | she/her <i class="twa twa-transgender-flag"></i> | comp sci student, stream producer, and catgirl vtuber
             </p><p>My website's still under construction, but in the meantime, see me around the internet at:
             </p>
             <ul id="linkslist">
                 <li ><a class="twitch" href="https://www.twitch.tv/azurahorizons"><i class="fa-brands fa-twitch"></i></a></li>
                 <li ><a class="twitter" href="https://twitter.com/AzuraHorizons"><i class="fa-brands fa-twitter"></i></a></li>
-                <li ><a class="mastodon" href="https://introvert.country/@azurahorizons"><i class="fa-brands fa-mastodon"></i></a></li>
+                <li ><a class="mastodon" rel="me" href="https://introvert.country/@azurahorizons"><i class="fa-brands fa-mastodon"></i></a></li>
                 <li ><a class="discord" href="https://discord.gg/TU4We3rSeD"><i class="fa-brands fa-discord"></i></a></li>
+                <li ><a class="tetrio" href="https://ch.tetr.io/u/azurahorizons"><i class="twa tetrioicon"></i></a></li>
             </ul>
+
+            <p class="tc sm">For me, it's currently <span id="localtime"></span> </p>
         </div>
 
         <div id="overlay" onclick="off()">
         </div>
         <div id="window">
             <model-viewer style="position:fixed; top:0;height: 100%; width: 100%;"alt="azura vtuber real" src="nya.glb" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
-            <button id="pause" onclick="off()"><i id="pausesign" class="fa-solid fa-close"></i></button>    
+            <button id="pause" onclick="off()"><i class="fa-solid fa-close"></i></button>    
         </div>
 
         </div>
         <button id="pause" onclick="myFunction()"><i id="pausesign" class="fa-solid fa-pause"></i></button>
 
+        <script>
+            function updateLocalTime() {
+                document.getElementById('localtime').innerText = new Date().toLocaleString('en-US', {
+                    timeZone: 'US/Eastern',
+                    hour: '2-digit',
+                    minute: 'numeric'
+                });
+            }
+        
+            setInterval(updateLocalTime, 1000);
+            updateLocalTime();
+        </script>
         <script>
             var video = document.getElementById("videobg");
             
