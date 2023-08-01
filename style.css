@@ -95,11 +95,12 @@ html{
   .tetrioicon {
     background-color: rgba(0, 0, 0, .0);
     display:inline-block;
-    overflow:visible !important;
     filter: drop-shadow(.25px .25px 0 #000) drop-shadow(-.25px -.25px 0 #000) drop-shadow(.25px -.25px 0 #000) drop-shadow(-.25px .25px 0 #000) drop-shadow(.25px .25px 0 #000);
-    background-image: url("tetrio-mono.png");
+    overflow:visible !important;
+    background-image: url("tetrio-mono.svg");
+    stroke:black;
     width: 1.01em;
-    height: 1.01em;
+    height: 1.11em;
     line-height: 1;
   }
 #heading{
