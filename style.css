@@ -1,6 +1,11 @@
+
+
+@font-face {
+  font-family: "Comic Neue Angular";
+  src: url("./ComicNeueAngular-Bold.ttf");
+}
 .hidden{
   display:none !important;
-}
 html{
     font-family: 'Manrope', sans-serif;
     background-color: black;
@@ -63,7 +68,7 @@ transition: opacity .3s;
     float: none;
   }
 
-  li a {
+  li a, .ringlink {
     display: block;
     padding: 10 50;
     color:white;
@@ -127,6 +132,7 @@ transition: opacity .3s;
     background-image: url("tetrio-mono.svg");
 
   }
+  
 #heading{
     font-size: 80px;
     position:relative;
@@ -233,4 +239,58 @@ transition: opacity .3s;
     box-shadow: 5px 5px 0px white;
 
   }
-  
+  .webring p{
+    display:inline-block;
+  }
+  .webring{
+    margin:auto;
+    width:50%;
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .ringlink{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ringlink:hover{
+    border: solid 2px white;
+    box-shadow: #fff 3px 3px 0px 0px;
+    transition: background-color .3s;
+  }
+  .june:hover{
+    background-color: #151516;
+  }
+  .aspen:hover{
+    background-color: #1E252D;
+  }
+  .ringlink:hover .ringarrow{
+    opacity: 0%;
+    transition: opacity .3s;
+  }
+  .aspen .ringname{
+    font-family: "Comic Neue Angular";
+    color:#FFA9C6;
+  }
+  .june .ringname{
+    font-family: "Fira Code";
+    font-weight: 700;
+    color:#e986ae;
+  }
+  .ringname{
+    text-shadow: none;
+    position: absolute;
+    margin:auto;
+    opacity:0%;
+    width:100%;
+    transform: skew(5deg);
+    text-align: center;
+  }
+  .ringlink:hover .ringname{
+    opacity: 100%;
+    transition: opacity .3s;
+  }
