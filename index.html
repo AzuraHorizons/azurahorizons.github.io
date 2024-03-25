@@ -72,7 +72,7 @@
         </div>
 
         </div>
-        <button id="pause" onclick="myFunction()"><i id="pausesign" class="fa-solid fa-pause"></i></button>
+        <button id="pause" onclick="myFunction()"><div id="pausebuffer"><i id="pausesign" class="fa-solid fa-pause"></i></div><div class="hidden" id="playbuffer"><i id="playsign" class="fa-solid fa-play"></i></div></button>
 
         <script>
             function updateLocalTime() {
@@ -87,20 +87,23 @@
             updateLocalTime();
         </script>
         <script>
-            var video = document.getElementById("videobg");
+            let video = document.getElementById("videobg");
             
             // Get the button
-            var btn = document.getElementById("pause");
-            var inner = document.getElementById("pausesign");
+            let btn = document.getElementById("pause");
+            let pauseinner = document.getElementById("pausebuffer");
+            let playinner = document.getElementById("playbuffer");
             
             // Pause and play the video, and change the button text
             function myFunction() {
               if (video.paused) {
                 video.play();
-                inner.className = "fa-solid fa-pause";
+                pauseinner.classList.remove("hidden");
+                playinner.classList.add("hidden");
               } else {
                 video.pause();
-                inner.className = "fa-solid fa-play";
+                playinner.classList.remove("hidden");
+                pauseinner.classList.add("hidden");
               }
             }
             </script>

@@ -1,7 +1,11 @@
+
+
 @font-face {
   font-family: "Comic Neue Angular";
   src: url("./ComicNeueAngular-Bold.ttf");
 }
+.hidden{
+  display:none !important;
 html{
     font-family: 'Manrope', sans-serif;
     background-color: black;
@@ -209,7 +213,7 @@ transition: opacity .3s;
     margin:auto;
     height: 100%;
     width: 100%;
-    z-index: 5;
+    z-index: 105;
   }
   #close{
     position: fixed;
@@ -225,7 +229,7 @@ transition: opacity .3s;
     border: 2px solid black;
     box-shadow: 5px 5px 0px black;
     cursor: pointer;
-    z-index: 15;
+    z-index: 115;
     transition:color .5s, background-color .5s, border .5s, box-shadow .5s;
   }
   #close:hover{
