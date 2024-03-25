@@ -257,15 +257,23 @@ transition: opacity .3s;
     justify-content: center;
     align-items: center;
   }
-  .ringlink:hover{
+  /* .ringlink:hover{
     border: solid 2px white;
     box-shadow: #fff 3px 3px 0px 0px;
     transition: background-color .3s;
+  } */
+
+  .ringlink:hover{
+    transition: background-color .3s;
   }
   .june:hover{
+    border: solid 2px #e986ae;
+    box-shadow: #e986ae 3px 3px 0px 0px;
     background-color: #151516;
   }
   .aspen:hover{
+    border: solid 2px #D3B5FF;
+    box-shadow: #D3B5FF 3px 3px 0px 0px;
     background-color: #1E252D;
   }
   .ringlink:hover .ringarrow{
