@@ -263,7 +263,7 @@ transition: opacity .3s;
     transition: background-color .3s;
   }
   .june:hover{
-    background-color: #151516;
+    background-color: #0d006f;
   }
   .aspen:hover{
     background-color: #1E252D;
@@ -277,9 +277,9 @@ transition: opacity .3s;
     color:#FFA9C6;
   }
   .june .ringname{
-    font-family: "Fira Code";
+    font-family: "Open Sans";
     font-weight: 700;
-    color:#e986ae;
+    color:#cdfffc;
   }
   .ringname{
     text-shadow: none;
