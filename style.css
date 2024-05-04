@@ -76,7 +76,7 @@ transition: opacity .3s;
     background-color: white;
     box-shadow: #000 3px 3px 0px 0px;
     border:solid 2px #000;
-    transition: color .3s, background-color .3s;
+    transition: color .3s, background-color .3s, border .3s, box-shadow .3s;
     transform: skew(-5deg);
   }
 
@@ -147,7 +147,7 @@ transition: opacity .3s;
     margin:auto;
     text-align: center;
 }
-#innertext{
+#innertext, .innertext{
     position:relative;
     font-size: 20px;
     text-shadow:
@@ -161,6 +161,9 @@ transition: opacity .3s;
     margin:auto;
     text-align: center;
     top:300px;
+}
+.innertext{
+  top: 0;
 }
 
   #pause{
@@ -178,6 +181,7 @@ transition: opacity .3s;
     box-shadow: 5px 5px 0px black;
     transform:skew(-5deg);
     cursor: pointer;
+    z-index: 2;
     
     transition:color .5s, background-color .5s, border .5s, box-shadow .5s;
   }
@@ -239,6 +243,9 @@ transition: opacity .3s;
     box-shadow: 5px 5px 0px white;
 
   }
+  #localtime{
+    font-weight: bold;
+  }
   .webring p{
     display:inline-block;
   }
@@ -263,8 +270,8 @@ transition: opacity .3s;
     transition: background-color .3s;
   } */
 
-  .ringlink:hover{
-    transition: background-color .3s;
+  .ringlink:hover, .ringlink{
+    transition: background-color .3s, border .3s, box-shadow .3s;
   }
   .june:hover{
     border: solid 2px #e986ae;
@@ -278,6 +285,9 @@ transition: opacity .3s;
   }
   .ringlink:hover .ringarrow{
     opacity: 0%;
+    transition: opacity .3s;
+  }
+  .ringlink .ringarrow{
     transition: opacity .3s;
   }
   .aspen .ringname{
@@ -301,4 +311,22 @@ transition: opacity .3s;
   .ringlink:hover .ringname{
     opacity: 100%;
     transition: opacity .3s;
+  }
+
+  footer {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    left:0;
+    height: 50px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer p {
+
+  text-align: center;
+
   }
