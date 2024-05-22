@@ -318,7 +318,7 @@ transition: opacity .3s;
     position: absolute;
     width: 100%;
     left:0;
-    height: 50px;
+    height: 75px;
     bottom: 0px;
     background-color: rgba(0, 0, 0, .8);
     display: flex;
