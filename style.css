@@ -109,6 +109,10 @@ transition: opacity .3s;
     background-color: #5865F2;
     text-decoration: none;
   }
+  .bluesky:hover{
+    background-color: #1185FE;
+    text-decoration: none;
+  }
   .tetrio:hover{
     background-color: #1f9100;
     text-decoration: none;
