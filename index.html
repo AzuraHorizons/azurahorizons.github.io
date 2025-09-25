@@ -44,8 +44,9 @@
         
         <div id="innertext"><b id="heading">hi, i'm Azura!</b>
         
-            <p>20 | she/her <i class="twa twa-transgender-flag"></i> | comp sci student, Tetris production, and catgirl vtuber
-            </p><p>My website's still under construction, but in the meantime, see me around the internet at:
+            <p>21 | she/her <i class="twa twa-transgender-flag"></i> | comp sci student, Tetris production, and catgirl vtuber
+            </p>
+            <p><span class="easteregg" title="Rewrite to match my rebrand coming soon™">My website's still under construction</span>, but in the meantime, see me around the internet at:
             </p>
             <ul id="linkslist">
                 <li ><a class="twitch" href="https://www.twitch.tv/azurahorizons"><i class="fa-brands fa-twitch"></i></a></li>
@@ -57,7 +58,7 @@
 
             </ul>
 
-            <p class="tc sm">Temporarily (and unfortunately) British - for me, it's currently <span id="localtime"></span>. </p>
+            <p class="tc sm">For me, it's currently <span id="localtime"></span>. </p>
 
             <div class="webring">
                 <a class="aspen ringlink" href="https://aspen.me.uk"><i class="ringarrow fa-solid fa-left-long"></i><p class="ringname">Aspen</p></a>
@@ -79,7 +80,7 @@
         <script>
             function updateLocalTime() {
                 document.getElementById('localtime').innerText = new Date().toLocaleString('en-US', {
-                    timeZone: 'Europe/London',
+                    timeZone: 'America/New_York',
                     hour: '2-digit',
                     minute: 'numeric'
                 });
@@ -113,7 +114,7 @@
             </script>
     </body>
     <footer>
-        <p class="innertext">Need to get in contact? I check Discord (<b>@azurahorizons</b>) most often, but you can also reach me through <a class="textlink" href="mailto:me@azurahori.zone">me@azurahori.zone</a>!<br>
+        <p class="innertext">Need to get in contact? I check Discord (<span><a class="textlink showTooltip" data-tooltip="Click to copy" data-tooltip-active="Copied!" style="cursor: pointer;" onclick="navigator.clipboard.writeText('azurahorizons'); event.target.innerHTML = 'Copied!'; setTimeout(() => { event.target.innerHTML = '@azurahorizons'; }, 1000);">@azurahorizons</a></span>) most often, but you can also reach me through <a class="textlink" href="mailto:me@azurahori.zone">me@azurahori.zone</a>!<br>
         </p>
         
         </footer>
