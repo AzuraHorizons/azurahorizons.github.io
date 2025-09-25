@@ -317,18 +317,40 @@ transition: opacity .3s;
     transition: opacity .3s;
   }
 
+  .easteregg:hover{
+    text-shadow: 
+       #FFF 0 0 4px;
+    transition: text-shadow .3s;
+  }
+
+    .tooltip {
+      position: absolute;
+      right:20px;
+
+    }
   footer {
     z-index: 1;
     position: absolute;
     width: 100%;
     left:0;
-    height: 75px;
+    height: 35px;
     bottom: 0px;
     background-color: rgba(0, 0, 0, .8);
     display: flex;
     align-items: center;
     justify-content: center;
   }
+   .showTooltip:hover::after {
+          position: absolute;
+          content: attr(data-tooltip);
+          top: -2.5em;
+          background-color: #333;
+          color: white;
+          padding: .25em .5em;
+          font-size: .8em;
+          transform: translateX(-8.5em);
+        }
+
   footer p {
 
   text-align: center;
