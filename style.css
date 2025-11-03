@@ -1,9 +1,7 @@
 
 
-@font-face {
-  font-family: "Comic Neue Angular";
-  src: url("./ComicNeueAngular-Bold.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap");
+
 .hidden{
   display:none !important;}
 html{
@@ -283,9 +281,9 @@ transition: opacity .3s;
     background-color: #151516;
   }
   .aspen:hover{
-    border: solid 2px #D3B5FF;
-    box-shadow: #D3B5FF 3px 3px 0px 0px;
-    background-color: #1E252D;
+    border: solid 2px #B2E0FF;
+    box-shadow: #B2E0FF 3px 3px 0px 0px;
+    background-color: #141414;
   }
   .ringlink:hover .ringarrow{
     opacity: 0%;
@@ -295,8 +293,9 @@ transition: opacity .3s;
     transition: opacity .3s;
   }
   .aspen .ringname{
-    font-family: "Comic Neue Angular";
-    color:#FFA9C6;
+    font-family: "Overpass Mono";
+    font-weight: 700;
+    color:#fff;
   }
   .june .ringname{
     font-family: "Fira Code";
