@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 1920px;
+            height: 1080px;
+            background-image: url(./hnrbtbg.png);
+        }
+        @font-face {
+            font-family: Palanquin-Bold;
+            src: url(./PalanquinDark-SemiBold.ttf);
+        }
+        @font-face {
+            font-family: Palanquin;
+            src: url(./PalanquinDark-Regular.ttf);
+        }
+        div {
+            position:absolute !important;
+        }
+        #lefttext{
+            width: 729px;
+            height: 66px;
+            bottom:0;
+            left:14px;
+            display: flex;
+            justify-content: center;
+            font-size: 36px;
+            color: black;
+        }
+        #localtime{
+            text-align: right;
+            width: 155px;
+            height: 66px;
+            bottom:0;
+            right:0;
+            display: flex;
+            justify-content: center;
+            font-size: 36px;
+            color: black;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+<div id="lefttext">
+    <span style="font-family: Palanquin, sans-serif;">Hummingbird Nest&nbsp</span> <span style="font-family: Palanquin-Bold, sans-serif;">@ RBT American Finals!</span>
+</div>
+
+<div id="localtime" style="font-family: Palanquin-Bold, sans-serif;">
+
+</div>
+ <script>
+            function updateLocalTime() {
+                document.getElementById('localtime').innerText = new Date().toLocaleString('en-US', {
+                    timeZone: 'America/New_York',
+                    hour: 'numeric',
+                    minute: 'numeric'
+                });
+
+            }
+
+            
+            setInterval(updateLocalTime, 1000);
+            updateLocalTime();
+        </script>
+</body>
